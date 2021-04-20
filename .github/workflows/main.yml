@@ -42,4 +42,4 @@ jobs:
       - name : Installing surge 
         run : npm install -g surge 
       - name : Deploying on surge 
-        run : surge ./ http://past-bread.surge.sh/ --token ${{secrets.API}}
+        run : surge ./build http://past-bread.surge.sh/ --token ${{secrets.API}}
